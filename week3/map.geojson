@@ -1,0 +1,11 @@
+{"type":"FeatureCollection",
+    "features":
+    [{"type":"Feature","properties":
+        {"place":"Century Park","color":"green"},
+        "geometry":{"type":"Point","coordinates":[121.54861450195311,31.217425958989562]}},
+        {"type":"Feature","properties":{"place":"Changtai Mall","color":"red"},
+        "geometry":{"type":"Point","coordinates":[121.59781694412233,31.207878502276806]}},
+        {"type":"Feature","properties":{"place":"Lujiazui","color":"blue"},
+        "geometry":{"type":"Point","coordinates":[121.49384379386902,31.236196906338535]}},
+        {"type":"Feature","properties":{"place":"Xintiandi","color":"yellow"},"geometry":
+            {"type":"Point","coordinates":[121.47064805030823,31.221334586716615]}}]}
