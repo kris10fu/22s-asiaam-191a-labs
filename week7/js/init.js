@@ -12,11 +12,12 @@ let layers = {
 // use the variables
 const map = L.map('the_map').setView(mapOptions.center, mapOptions.zoom);
 
-let Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-	maxZoom: 16
+let CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	maxZoom: 20
 });
-Esri_WorldGrayCanvas.addTo(map);
+CartoDB_Positron.addTo(map);
 
 L.control.layers(null,layers).addTo(map)
 
